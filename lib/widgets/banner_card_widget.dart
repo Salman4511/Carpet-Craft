@@ -11,10 +11,11 @@ class BannerCardWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Container(
-        height: 250,
+        height: 200,
         alignment: Alignment.topLeft,
         decoration: BoxDecoration(
             image: const DecorationImage(
+              fit: BoxFit.cover,
                 image: NetworkImage(
                     'https://englishelm.com/cdn/shop/products/395194_8_1024x1024.jpg?v=1658236560')),
             borderRadius: BorderRadius.circular(10)),

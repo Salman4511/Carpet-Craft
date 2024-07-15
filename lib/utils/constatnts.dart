@@ -14,7 +14,7 @@ TextStyle textstyle2 = const TextStyle(
 TextStyle textstyle3 = TextStyle(
     fontSize: 18, fontWeight: FontWeight.bold, color: kblack.withOpacity(0.7));
 TextStyle textstyle4 =
-    TextStyle(fontWeight: FontWeight.bold, color: kblack.withOpacity(0.7));
+    const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.brown);
 TextStyle textstyle5 =
     const TextStyle(fontSize: 15, fontWeight: FontWeight.w400);
 TextStyle textstyle6 =
