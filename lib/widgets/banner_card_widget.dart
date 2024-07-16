@@ -15,7 +15,7 @@ class BannerCardWidget extends StatelessWidget {
         alignment: Alignment.topLeft,
         decoration: BoxDecoration(
             image: const DecorationImage(
-              fit: BoxFit.cover,
+                fit: BoxFit.cover,
                 image: NetworkImage(
                     'https://englishelm.com/cdn/shop/products/395194_8_1024x1024.jpg?v=1658236560')),
             borderRadius: BorderRadius.circular(10)),

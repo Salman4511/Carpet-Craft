@@ -1,23 +1,23 @@
 import 'package:carpet_craft/utils/constatnts.dart';
 import 'package:flutter/material.dart';
 
-class FilterCardWidget extends StatelessWidget {
+class ShopsToExploreWidget extends StatelessWidget {
   final String title;
-  final String img;
-  const FilterCardWidget({
+  final String image;
+  const ShopsToExploreWidget({
     super.key,
     required this.title,
-    required this.img,
+    required this.image,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 130,
-      width: 113,
+      height: 140,
+      width: 170,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        image: DecorationImage(fit: BoxFit.cover, image: NetworkImage(img)),
+        image: DecorationImage(fit: BoxFit.cover, image: NetworkImage(image)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

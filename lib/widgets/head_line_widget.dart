@@ -2,8 +2,10 @@ import 'package:carpet_craft/utils/constatnts.dart';
 import 'package:flutter/material.dart';
 
 class HeadLineWidget extends StatelessWidget {
+  final String headline;
   const HeadLineWidget({
     super.key,
+    required this.headline,
   });
 
   @override
@@ -19,7 +21,7 @@ class HeadLineWidget extends StatelessWidget {
               color: Colors.brown,
             ),
             Text(
-              'Collections',
+              headline,
               style: textstyle3,
             ),
           ],
