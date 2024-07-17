@@ -44,8 +44,14 @@ class _SearchScreenState extends State<SearchScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Persian Tabris',style: textstyle3,),
-                    const Text('10,000 results',style: TextStyle(color: kgrey),)
+                    Text(
+                      'Persian Tabris',
+                      style: textstyle3,
+                    ),
+                    const Text(
+                      '10,000 results',
+                      style: TextStyle(color: kgrey),
+                    )
                   ],
                 ),
                 const Spacer(),
@@ -60,7 +66,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     children: [
                       Text(
                         '       Filters',
-                        style: TextStyle(color: kgrey,fontSize: 10),
+                        style: TextStyle(color: kgrey, fontSize: 10),
                       ),
                     ],
                   ),
@@ -72,20 +78,24 @@ class _SearchScreenState extends State<SearchScreen> {
             SizedBox(
               height: 1000,
               child: ListView.builder(
-                itemBuilder: (context, index) => 
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-              
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    ProductCardWidget(img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8CUUIcBlzJ91iE_2GbLHfETBfXUBqHXWqA&s',),
-                    kwidth10,
-                    ProductCardWidget(img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_O8Q1Use0Y1dRRnhpjxEyUUxM950sWpKb_fI3G2MHHjVnrOygtSX7qngUnS_2UmVkdr8&usqp=CAU',)
-                  ],
+                itemBuilder: (context, index) => Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const ProductCardWidget(
+                        img:
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8CUUIcBlzJ91iE_2GbLHfETBfXUBqHXWqA&s',
+                      ),
+                      kwidth10,
+                      const ProductCardWidget(
+                        img:
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_O8Q1Use0Y1dRRnhpjxEyUUxM950sWpKb_fI3G2MHHjVnrOygtSX7qngUnS_2UmVkdr8&usqp=CAU',
+                      )
+                    ],
+                  ),
                 ),
-              )
-              ,),
+              ),
             )
           ],
         ),
@@ -93,4 +103,3 @@ class _SearchScreenState extends State<SearchScreen> {
     );
   }
 }
-
